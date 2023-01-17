@@ -13,7 +13,7 @@
     <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
         <form action="../Proses/tambah.php" method="post">
             <h3>Create Your Data</h3>
-            <input type="text" name="nis" required placeholder= "Nis">
+            <!-- <input type="text" name="nis" required placeholder= "Nis"> -->
             <input type="text" name="nama" required placeholder= "Name">
             <input type="text" name="kelas" required placeholder= "Class">
             
