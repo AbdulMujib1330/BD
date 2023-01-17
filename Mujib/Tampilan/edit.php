@@ -17,18 +17,32 @@
 </head>
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 <body>
-  <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
+<div class="px-auto mx-auto my-auto top-50 start-50 translate-middle py-auto card text-center w-50 position-absolute ">
+  <div class="card-header text-center p-3">
+  <h3>Update Your Data</h3>
+  </div>
+  <div class="card-body p-3">
+    <blockquote class="blockquote mb-0">
     <form action="../proses/edit.php" method="post">
         <input type="hidden" name="Nis" value="<?=$nis?>">
-        <h3>Update Your Data</h3>
-        <input type="text" value="<?=$data['NAME']?>" name="Nama" class="form-control" id="floatingInput" required placeholder= "Nama">
-        <input type="text" value="<?=$data['CLASS']?>" name="Class" class="form-control" id="floatingInput" required placeholder= "Class">
-        
-        <input type="submit" value="Update Data" class="form-btn">
-        <td>
-        <a onclick="return confirm('Want To Go Back?')"  href="data.php" class="">Back</a>
-        </td>
+        <div class="position-flex  align-items-end">
+          <input type="text" value="<?=$data['NAME']?>"   name="Nama"   class="form-control my-1 mb-2 w-100" id="floatingInput" required placeholder= "Nama">
+          <input type="text" value="<?=$data['CLASS']?>"  name="Class"  class="form-control my-1 mb-2 w-100" id="floatingInput" required placeholder= "Class">
+        </div>
+      <footer>
+      <td>
+        <div class="ml-5 pt-2">
+          <input type="submit" value="Update Data" class="form-btn">
+          <a onclick="return confirm('Want To Go Back?')"  href="data.php" class="">Back</a>
+        </div>
+      </td>
+      </footer>
+    </blockquote>
     </form>
+  </div>
+</div>
+  <div class="form-container py-auto d-flex justify-content-center algin-items-center h-100">
+    
   </div>
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
 </body>
